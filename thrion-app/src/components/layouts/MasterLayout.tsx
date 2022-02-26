@@ -1,14 +1,7 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
-import MasterLayout from "./components/layouts/MasterLayout";
-import AuthLayout from "./components/layouts/AuthLayout";
-
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-
-const App2 = () => {
+const MasterLayout = () => {
   return (
     <>
       <header>
@@ -45,31 +38,16 @@ const App2 = () => {
           </nav>
         </div>
         <div>
-          <a className="login-link" href="">Login</a>
+          <a className="login-link" href="">
+            Login
+          </a>
         </div>
       </header>
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
+        <Outlet />
       </main>
     </>
   );
 };
 
-const App = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<MasterLayout />}>
-        <Route index element={<Home />} />
-      </Route>
-      <Route path="/" element={<AuthLayout />} >
-        <Route path="/login" element={<Login />} />
-      </Route>
-    </Routes>
-  );
-}
-
-export default App;
+export default MasterLayout;
