@@ -70,10 +70,12 @@ header {
   width: 100%;
 }
 
-.log h1{
-  text-align: center;
-  color: #000;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  border-bottom: 4px solid #2979ff;
+.log1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.log {
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
 }
