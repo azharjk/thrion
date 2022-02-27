@@ -9,7 +9,7 @@ const AuthLayout = () => {
       <header className="auth-header">
         <h1 className="auth-header__heading">ThriØn</h1>
       </header>
-      <main>
+      <main className="auth-content">
         <Outlet />
       </main>
     </>
