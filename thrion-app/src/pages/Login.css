@@ -1,0 +1,36 @@
+/* FIXME: Consider move this to utilities class */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group__reset-password {
+  font-size: 15px;
+  font-family: var(--text-family);
+}
+
+.form-group__submit-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-group__remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.form-group__remember-me input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 24px;
+  height: 24px;
+}
+
+.form-helper {
+  margin-top: 5rem;
+}
+
+.form-helper span a {
+  color: #2563eb;
+}

@@ -12,6 +12,7 @@ const AuthLayout = () => {
       <main className="auth-content">
         <Outlet />
       </main>
+      {/* FIXME: Create the footer */}
     </>
   );
 };
