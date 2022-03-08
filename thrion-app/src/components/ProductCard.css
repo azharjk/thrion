@@ -1,0 +1,33 @@
+.card__content {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  border-right: .5rem solid black;
+  border-bottom: 1.5rem solid black;
+}
+
+.card__image {
+  width: 200px;
+  height: 250px;
+}
+
+.card__title {
+  font-size: 18px;
+}
+
+.card__link {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+.card__price {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.card__price__text {
+  padding: 0 5rem;
+  border: 2px solid black;
+}

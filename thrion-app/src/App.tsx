@@ -7,19 +7,21 @@ import AuthLayout from "./components/layouts/AuthLayout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import AppHome from "./pages/AppHome";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<MasterLayout />}>
         <Route index element={<Home />} />
+        <Route path="/app" element={<AppHome />} />
       </Route>
-      <Route path="/" element={<AuthLayout />} >
+      <Route path="/" element={<AuthLayout />}>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Route>
     </Routes>
   );
-}
+};
 
 export default App;
