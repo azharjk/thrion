@@ -38,6 +38,7 @@ const MasterLayout = () => {
           </nav>
         </div>
         <div>
+          {/* FIXME: Change this if logged in */}
           <a className="login-link" href="">
             Login
           </a>
