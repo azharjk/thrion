@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
 import mensWearImage from "../data/menswears/1.jpg";
 import "./AppHome.css";
 
 import { Wear } from "../interfaces";
+import { login } from "../store";
 
 import ProductCard from "../components/ProductCard";
 
 const AppHome = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(login());
+  });
+
   // NOTE: Dummy data
   const mensWears: Wear[] = [
     {
